@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function makephrases () {
+      var name = [ '杨吉', '孙权','濮徐杰','顾伟豪' ]
+    var time = ['中午','体育课下课','自习课','课间']
+    var site = ['教室','食堂','操场','机房课']
+    var activiing = ['一起吃饭','一起打王者','一起吃鸡','共同探讨']
+
+    //var renwu = Math.floor (Math.random() * renwu.lengh)
+    //var shijian = Math.floor (Math.random() * shijian.lengh)
+    //var didian = Math.floor (Math.random() * didian.lengh)
+    //var huodong = Math.floor (Math.random() * huodong.lengh)
+
+    
+    var phrase = document.write(name[rand(name)] + time [rand(time)] + site [rand(site)] + activiing[rand(activiing)])
+    document.write(phrease)
+
+
+    function rand(array){
+      return Math.floor (Math.random()*array.length)
+    }
+   }
+   makephrases();
+   
+  </script>
+</body>
+</html>
