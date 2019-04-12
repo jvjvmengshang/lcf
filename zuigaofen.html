@@ -9,14 +9,24 @@
 <body>
   <script>
     var highest  = 0
-    var scores = [90, 96, 87, 56, 78]
+    var xiang = []
+    var j = 0
+    var scores = [90, 96, 87, 96, 96, 96, 96, 78]
     for (var i = 0; i < scores.length ; i++) {
       if (scores[i] > highest){
         highest = scores[i]
+        j = 0 
+        xiang = []
+        xiang[j] = i
+      } else if (scores[i] = highest) {
+        if (xiang == -1) {
+        j++
+        xiang[j] = i
       }
     }
-
-    document.write(highest)
-  </script>
+   }
+   for (var c = 0; c < xiang.length ; c++)
+   document.write("scores["  + xiang[c]  + "] = " + highest)
+</script>
 </body>
 </html>
